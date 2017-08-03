@@ -1,0 +1,244 @@
+
+.tabs-style-linetriangle nav a {
+	overflow: visible;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.tabs-style-linetriangle nav a span {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 1em;
+}
+
+.tabs-style-linetriangle nav li.tab-current a:after,
+.tabs-style-linetriangle nav li.tab-current a:before {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	content: '';
+	pointer-events: none;
+}
+
+.tabs-style-linetriangle nav li.tab-current a:after {
+	margin-left: -10px;
+	border-width: 10px;
+	border-top-color: #e7ecea;
+}
+
+.tabs-style-linetriangle nav li.tab-current a:before {
+	margin-left: -11px;
+	border-width: 11px;
+	border-top-color: rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 58em) {
+	.tabs-style-linetriangle nav {
+		font-size: 0.8em;
+	}
+}
+
+.tabs {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	font-weight: 300;
+	font-size: 1.75em;
+}
+
+.tabs nav {
+	text-align: center;
+}
+
+.tabs nav ul {
+	position: relative;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1200px;
+	list-style: none;
+	-ms-box-orient: horizontal;
+	-ms-box-pack: center;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
+
+.tabs nav ul li {
+	position: relative;
+	z-index: 1;
+	display: block;
+	margin: 0;
+	text-align: center;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.tabs nav a {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 2.5;
+}
+
+.tabs nav a span {
+	vertical-align: middle;
+	font-size: 0.75em;
+}
+
+.tabs nav li.tab-current a {
+	color: #74777b;
+}
+
+.tabs nav a:focus {
+	outline: none;
+}
+
+/* Content */
+.content-wrap {
+	position: relative;
+}
+
+.content-wrap section {
+	display: none;
+	margin: 0 auto;
+	padding: 1em;
+	max-width: 1200px;
+	text-align: center;
+}
+
+.content-wrap section.content-current {
+	display: block;
+}
+
+.content-wrap section p {
+	margin: 0;
+	padding: 0.75em 0;
+	color: darkslategrey;
+	font-weight: 400;
+	font-size: 0.75em;
+	line-height: 1;
+	text-align: left;
+}
+.content-wrap section h1 {
+	margin: 0;
+	padding: 0.75em 0;
+	color: darkgray;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1;
+	text-align: left;
+}
+.content-wrap section h2 {
+	margin: 0;
+	padding: 0.75em 0;
+	color: lightskyblue;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1;
+	text-align: left;
+}
+
+body {
+	background: #e7ecea;
+	color: #74777b;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: Arial;
+}
+
+a {
+	color: lightskyblue;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #74777b;
+}
+.no-flexbox .support {
+	display: block;
+}
+
+.hidden {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+}
+/*
+.container > section {
+	padding: 5em 0;
+	font-size: 1.25em;
+	min-height: 100%;
+}
+*/
+.button {
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 15px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: white;
+	background-color: grey;
+	border: none;
+	border-radius: 12px;
+	box-shadow: 0 5px #999;
+}
+table { table-layout: fixed; }
+.button:hover {
+	background-color: #f2f2f2;
+	color:black;
+}
+
+.button:active {
+	background-color: #f2f2f2;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+#body{
+	width: 250px;
+	height: 200px;
+}
+#subject{
+	width: 250px;
+	height: 30px;
+}
+#sender{
+	width: 250px;
+	height: 30px;
+}
+.hit-the-floor {
+	color: #e7ecea;
+	font-size: 5em;
+	font-weight: bold;
+	font-family: Helvetica;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.hit-the-floor {
+	text-align: center;
+}

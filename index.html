@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
+  		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<svg class="hidden">
+			<defs>
+				<path id="tabshape" d="M80,60C34,53.5,64.417,0,0,0v60H80z"/>
+			</defs>
+		</svg>
+		<div class="container">
+			<div class="hit-the-floor">Dar Nettler</div><br><br>
+			<section>
+				<div class="tabs tabs-style-linetriangle">
+					<nav>
+						<ul>
+							<li><a href="#section-linetriangle-1"><span>About me</span></a></li>
+							<li><a href="#section-linetriangle-2"><span>previous projects</span></a></li>
+							<li><a href="#section-linetriangle-3"><span>Contact me</span></a></li>
+						</ul>
+					</nav>
+					<div class="content-wrap">
+						<section id="section-linetriangle-1">
+							<h1>3rd year Information Systems Engineering student at Ben- Gurion University</h1>
+							<img src="hire_me.png" width="320" height="280" align="right">
+							<p><br>
+							Familiar with C#, java, phyton, HTML5, css, javascript, node.js and angular.js. <br><br>
+							Looking for a student position (up to 60%)
+						</p>
+
+						</section>
+						<section id="section-linetriangle-2"><p>
+							<a target="_blank" href="http://alonprofile.com/DarCarmela/index.html"><u>Pac-man game</u></a> <br>made using html, css and jquery.
+							use username and password "a" for login
+							<br><br>
+							<a target="_blank" href="https://github.com/darnetgit/puzzles"><u>Puzzle store</u></a> <br>made using html, css, jquery, nodejs, angularjs
+							and microsoft's Azure database. use username and password "c" for login
+							<br><br><br>
+							other project can be found in my
+							<a target="_blank" href="https://github.com/darnetgit"><u>GitHub</u></a>
+
+						</p></section>
+						<section id="section-linetriangle-3"><p>
+							<table width="100%">
+							<form action="MAILTO:darnettler@gmail.com" method="GET" enctype="text/plain" name="Name" id="Name">
+								<th>Send me an email!</th>
+								<th>Find me on linkedIn:</th>
+								<tr>
+									<td width="50%">
+										<center>
+										<input placeholder="Sender Email" type="sender" id="sender" maxlength="50"><br>
+										<input placeholder="Subject" type="subject" id="subject" maxlength="100"><br><br>
+										<textarea placeholder="Contact me!" name="body" id="body" maxlength="300"></textarea><br>
+										<input type="reset" class="button" value="Reset Form">
+										<input type="submit" class="button" value="Send">
+										</center>
+									</td>
+									<td width="50%">
+										<a target="_blank" href="https://www.linkedin.com/in/dar-nettler-2a07b398/" ><img width="150" height="150" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Linkedin_vmc2015.png"></a>
+									</td>
+								</tr>
+							</form>
+							</table>
+						</p></section>
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+			</section>
+
+		</div><!-- /container -->
+		<script src="js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
+	</body>
+</html>
