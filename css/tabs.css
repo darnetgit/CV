@@ -171,6 +171,7 @@ a {
 	color: lightskyblue;
 	text-decoration: none;
 	outline: none;
+	font-size: larger;
 }
 
 a:hover, a:focus {
